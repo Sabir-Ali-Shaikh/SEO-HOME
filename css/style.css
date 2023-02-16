@@ -56,5 +56,51 @@ a:hover {
 
 
 
+/* Hero Section  */
+
+
+h1 {
+  font-weight: bold;
+  position: relative;
+}
+
+.expert {
+  position: absolute;
+  right: 0;
+  color: #6f77f1;
+  border: 2px solid #6f77f1;
+  padding: 0.3rem;
+  rotate: -15deg;
+  font-size: 3rem;
+}
+
+@media (min-width: 0px) {
+  .right {
+    height: 70vh;
+    background: url(/img/women.png) no-repeat center center/70%,
+      url(/img/women-back.png) no-repeat center center/80%,
+      url(/img/Rectangle79.png) no-repeat center center/70%;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .mainSection {
+    height: 80vh;
+  }
+
+  .right {
+    height: 100%;
+    background: url(/img/women.png) no-repeat left center/70%,
+      url(/img/women-back.png) no-repeat left center/80%,
+      url(/img/Rectangle79.png) no-repeat center top/45%;
+  }
+  h1 {
+    font-size: 4rem !important;
+  }
+}
 
 
