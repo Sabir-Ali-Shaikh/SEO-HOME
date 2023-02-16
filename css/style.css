@@ -1,0 +1,60 @@
+* {
+  font-family: "poppins",;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #e9e9e9;
+}
+
+.act {
+  background-color: #717AE0;
+}
+
+
+
+.choose-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+.zeffect :hover {
+  zoom: 102%;
+  background-color: #6f77f1;
+  color: azure;
+  cursor: pointer;
+}
+
+.buttonhover:hover {
+  background-color: #fff200 !important;
+  color: black !important;
+}
+
+.hover-card:hover{
+    border-bottom: 2px solid #717AE0 !important;
+}
+
+.hover-icon:hover{
+    color: #6f77f1 !important;
+    cursor: pointer;
+
+}
+
+.team-card:hover{
+    color:#6f77f1;
+}
+
+
+
+
+
