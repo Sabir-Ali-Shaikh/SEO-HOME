@@ -1,11 +1,13 @@
 * {
-  font-family: "poppins",;
+  font-family: "poppins";
+}
+.container {
+  max-width: 1920px !important;
 }
 
-
-a:hover {
+/* a:hover {
   text-decoration: underline;
-}
+} */
 
 .circle {
   width: 10px;
@@ -15,92 +17,108 @@ a:hover {
 }
 
 .act {
-  background-color: #717AE0;
+  background-color: #717ae0;
 }
-
-
 
 .choose-card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
-.zeffect :hover {
-  zoom: 102%;
-  background-color: #6f77f1;
-  color: azure;
-  cursor: pointer;
+.zeffect {
+  background: transparent;
+  transition: transform .2s;
 }
+
+.zeffect:hover {
+  /* background: ; */
+  background: url(/img/price.png)no-repeat center bottom/100%,#6f77f1;
+  scale: 1.05;
+  color: white;
+}
+
 
 .buttonhover:hover {
   background-color: #fff200 !important;
   color: black !important;
 }
 
-.hover-card:hover{
-    border-bottom: 2px solid #717AE0 !important;
+.hover-card::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid #717ae0 !important;
+  transform: scaleX(0);
 }
 
-.hover-icon:hover{
-    color: #6f77f1 !important;
-    cursor: pointer;
-
+.hover-card:hover::after {
+  transform: scaleX(1);
 }
 
-.team-card:hover{
-    color:#6f77f1;
+.hover-icon:hover {
+  color: #6f77f1 !important;
+  cursor: pointer;
 }
 
-
-
-/* Hero Section  */
-
-
-h1 {
-  font-weight: bold;
-  position: relative;
-}
-
-.expert {
-  position: absolute;
-  right: 0;
+.team-card:hover {
   color: #6f77f1;
-  border: 2px solid #6f77f1;
-  padding: 0.3rem;
-  rotate: -15deg;
-  font-size: 3rem;
 }
 
 @media (min-width: 0px) {
-  .right {
-    height: 70vh;
-    background: url(/img/women.png) no-repeat center center/70%,
-      url(/img/women-back.png) no-repeat center center/80%,
-      url(/img/Rectangle79.png) no-repeat center center/70%;
-  }
-
-  h1 {
-    font-size: 3rem !important;
+  .width {
+    width: 100%;
   }
 }
 
-@media (min-width: 800px) {
-  .mainSection {
-    height: 80vh;
-  }
-
-  .right {
-    height: 100%;
-    background: url(/img/women.png) no-repeat left center/70%,
-      url(/img/women-back.png) no-repeat left center/80%,
-      url(/img/Rectangle79.png) no-repeat center top/45%;
-  }
-  h1 {
-    font-size: 4rem !important;
+@media (min-width: 768px) {
+  .width {
+    width: 30%;
   }
 }
 
 
+
+/* nav hover */
+.navbar-items {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.navbar-items::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6f77f1;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-items:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*  */
+
+
+    
+    .swiper-slide {
+      padding: 5px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .swiper-slide img {
+      display: block;
+
+      object-fit: cover;
+    }
