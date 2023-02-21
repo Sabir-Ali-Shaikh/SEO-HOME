@@ -19,4 +19,14 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+const searchButton = document.querySelector('.search-button')
+const searchBar = document.querySelector('.search-bar')
 
+searchButton.addEventListener('click',()=>{
+  if(searchBar.classList.contains('hide')){
+    searchBar.classList.remove('hide')
+  }
+  else{
+    searchBar.classList.add('hide')
+  }
+})

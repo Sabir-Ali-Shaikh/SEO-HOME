@@ -15,6 +15,11 @@
   color: rgb(0, 0, 0) !important;
 }
 
+.search-bar.hide {
+  transition: 2s;
+  display: none;
+}
+
 .creative {
   margin-right: auto;
   z-index: 2;
