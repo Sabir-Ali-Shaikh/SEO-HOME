@@ -3,14 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 * {
-  font-family: "Poppins", "sans-serif";
+  font-family: "Poppins", "sans-serif" ;
 }
 
 .purple {
   color: #6f77f1;
 }
 
-.scr-hover:hover{
+.scr-hover:hover {
   background: rgb(255, 247, 0);
   color: rgb(0, 0, 0) !important;
 }
@@ -67,6 +67,10 @@
   transform: scaleX(1);
 }
 
+.opacity {
+  opacity: 100%;
+}
+
 .hover-icon:hover {
   color: #6f77f1 !important;
   cursor: pointer;
@@ -116,22 +120,27 @@
   margin-top: 2rem;
 }
 
-
-
 .swiper-slide img {
   display: block;
   object-fit: cover;
 }
 
 .price-tag {
-  transition: transform 1s;
+  transition: transform 2s;
 }
-
 
 .price-tag:hover {
   background: url(../img/our-price/price-bg.png) no-repeat center;
   color: white !important;
   transform: scale(1.1);
+}
+
+.price-tag:hover .purple {
+  color: #fff;
+}
+
+.price-tag:hover button {
+  background-color: #fad725;
 }
 
 .price-btn {
@@ -152,12 +161,24 @@
   max-width: 1920px !important;
 }
 
-
-
-
 @media (min-width: 0px) {
   .width {
     width: 100%;
+  }
+  .nav-small {
+    display: block !important;
+  }
+  .nav-large {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .nav-small {
+    display: none !important;
+  }
+  .nav-large {
+    display: block !important;
   }
 }
 
@@ -196,5 +217,3 @@
     font-size: 3rem;
   }
 }
-
-
