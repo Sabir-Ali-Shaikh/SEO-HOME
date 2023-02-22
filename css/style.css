@@ -72,10 +72,6 @@
   transform: scaleX(1);
 }
 
-.opacity {
-  opacity: 100%;
-}
-
 .hover-icon:hover {
   color: #6f77f1 !important;
   cursor: pointer;
